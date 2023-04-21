@@ -1,0 +1,12 @@
+server:
+  port: 8443
+  ssl:
+    enabled: true
+    key-store: classpath:localhost.p12
+    key-store-password: secret
+    key-store-type: pkcs12
+    key-alias: localhost
+    client-auth: want
+    trust-store: classpath:localCA.p12
+    trust-store-password: secret
+    trust-store-type: pkcs12
